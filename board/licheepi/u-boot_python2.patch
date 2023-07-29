@@ -1,5 +1,5 @@
---- /home/ivanovp/buildroot/buildroot_lichee_pi_zero/output/build/uboot-v3s-current/./tools/binman/binman.1	2023-07-29 10:54:55.431412726 +0200
-+++ /home/ivanovp/buildroot/buildroot_lichee_pi_zero/output/build/uboot-v3s-current/./tools/binman/binman	2023-07-29 10:55:01.451618458 +0200
+--- ./tools/binman/binman.py	2023-07-29 10:54:55.431412726 +0200
++++ ./tools/binman/binman.py	2023-07-29 10:55:01.451618458 +0200
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python
 +#!/usr/bin/python2
