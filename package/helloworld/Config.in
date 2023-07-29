@@ -1,0 +1,7 @@
+config BR2_PACKAGE_HELLOWORLD
+    bool "helloworld"
+    help
+        helloworld package.
+
+        https://helloworld.xyz
+
