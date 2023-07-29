@@ -1,0 +1,9 @@
+config BR2_PACKAGE_QT6HELLOWORLD
+    bool "qt6helloworld"
+    help
+        Qt6HelloWorld package.
+
+
+comment "Qt6HelloWorld needs Qt6"
+    depends on !BR2_PACKAGE_QT6
+
