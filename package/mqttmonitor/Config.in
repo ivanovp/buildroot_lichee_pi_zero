@@ -1,0 +1,7 @@
+config BR2_PACKAGE_MQTTMONITOR
+    bool "mqttmonitor"
+    help
+        mqttmonitor package.
+
+        https://mqttmonitor.xyz
+

@@ -1,3 +1,8 @@
+menu "Custom applications"
+    source "package/mqttmonitor/Config.in"
+    source "package/qt6helloworld/Config.in"
+endmenu
+
 menu "Target packages"
 
 	source "package/busybox/Config.in"
