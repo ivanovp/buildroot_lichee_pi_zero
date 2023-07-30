@@ -1,0 +1,16 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+#    hwaddress ether `dd if=/sys/class/i2c-dev/i2c-0/device/0-0050/eeprom bs=18 count=1`
+#    pre-up /etc/network/nfs_check
+#    wait-delay 15
+#    hostname $(hostname)
+
+#auto wlan0
+#iface wlan0 inet dhcp
+#    pre-up killall -q wpa_supplicant; wpa_supplicant -B -Dnl80211 -iwlan0 -c/etc/wpa_supplicant.conf; wait_if wlan0
+#    post-down killall -q wpa_supplicant
+#    wait-delay 15
+
