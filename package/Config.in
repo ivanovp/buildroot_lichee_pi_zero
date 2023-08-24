@@ -2,6 +2,7 @@ menu "Custom applications"
     source "package/helloworld/Config.in"
     source "package/qt6helloworld/Config.in"
     source "package/mqttmonitor/Config.in"
+    source "package/qmqmonitor/Config.in"
 endmenu
 
 menu "Target packages"
