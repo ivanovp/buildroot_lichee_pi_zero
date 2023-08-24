@@ -1,0 +1,9 @@
+config BR2_PACKAGE_QMQMONITOR
+    bool "qmqmonitor"
+    help
+        QMQMonitor package.
+
+
+comment "QMQMonitor needs Qt5"
+    depends on !BR2_PACKAGE_QT5
+
