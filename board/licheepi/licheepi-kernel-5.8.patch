@@ -147,7 +147,7 @@ new file mode 100644
 index 000000000..6d1bb4060
 --- /dev/null
 +++ b/arch/arm/boot/dts/sun8i-v3s-licheepi-zero-with-800x480-lcd.dts
-@@ -0,0 +1,11 @@
+@@ -0,0 +1,24 @@
 +/*
 + * Copyright (C) 2018 Icenowy Zheng <icenowy@aosc.io>
 + *
@@ -158,6 +158,19 @@ index 000000000..6d1bb4060
 +
 + &panel {
 +	compatible = "urt,umsh-8596md-t", "simple-panel";
++};
++
++&spi0 {
++   pinctrl-names = "default";
++   pinctrl-0 = <&spi0_pins>;
++   status = "okay";
++   flash@0 {
++       #address-cells = <1>;
++       #size-cells = <1>;
++       compatible = "spi-nand";
++       reg = <0>;
++       spi-max-frequency = <5000000>;
++   };
 +};
 diff --git a/arch/arm/boot/dts/sun8i-v3s-licheepi-zero-with-lcd.dtsi b/arch/arm/boot/dts/sun8i-v3s-licheepi-zero-with-lcd.dtsi
 new file mode 100644
